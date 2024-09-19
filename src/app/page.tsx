@@ -3,7 +3,7 @@ import { Resume } from '@/templates/resume'
 
 export default function Home() {
 	return (
-		<main className='min-h-screen w-full relative pt-28 font-[family-name:var(--font-geist-sans)] mx-auto xl:max-w-6xl'>
+		<main className='min-h-screen w-full relative pt-28 mx-auto xl:max-w-6xl'>
 			<Hero />
 			<Resume />
 		</main>
