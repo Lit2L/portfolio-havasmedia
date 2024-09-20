@@ -35,7 +35,7 @@ export const TechList = () => {
 				<AnimatedText
 					as='h3'
 					text='Tech I enjoy'
-					className='text-dark-200 dark:text-dark-400 text-sm tracking-wider uppercase'
+					className='text-dark-200 dark:text-dark-400 text-sm text-left tracking-wider uppercase'
 				/>
 				<motion.div
 					variants={{

@@ -10,7 +10,7 @@ export function Resume() {
 	return (
 		<SectionShell id='resume'>
 			<SectionHeader heading='resume' />
-			<div className='flex flex-col h-full py-6'>
+			<div className='flex flex-col h-full mt-6'>
 				<ContainerScroll
 					titleComponent={
 						<p className='text-lg font-semibold  text-black dark:text-white'>
@@ -18,16 +18,18 @@ export function Resume() {
 						</p>
 					}
 				>
-					<Link href='/LarryLy-CV.pdf'>
-						<Image
-							src={`/LarryLy-CV.png`}
-							alt='hero'
-							height={720}
-							width={1400}
-							className='mx-auto rounded-2xl object-cover h-full object-left-top'
-							draggable={false}
-						/>
-					</Link>
+					<div className=''>
+						<Link href='/LarryLy-CV.pdf'>
+							<Image
+								src={`/LarryLy-CV.png`}
+								alt='hero'
+								height={720}
+								width={1400}
+								className='mx-auto rounded-2xl object-cover h-full object-left-top'
+								draggable={false}
+							/>
+						</Link>
+					</div>
 				</ContainerScroll>
 			</div>
 		</SectionShell>

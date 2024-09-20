@@ -20,26 +20,26 @@ export const Hero = () => {
 	return (
 		<header
 			id='intro'
-			className='pb-6 shadow-[inset_0_-40px_15px_-10px_#ededed] min-h-screen transition duration-300 ease-in-out dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto w-full'
+			className='pb-6 shadow-[inset_0_-40px_15px_-10px_#ededed] h-[40rem] transition duration-300 ease-in-out dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto w-full mx-auto '
 		>
-			<div className='flex w-full mx-auto h-full items-center'>
-				<motion.section
-					variants={{
-						hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
-						visible: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } }
-					}}
-					initial='hidden'
-					whileInView='visible'
-					exit='hidden'
-					viewport={{ once: true }}
-					className='relative container mb-12 flex flex-col space-y-16 w-full w-1/2'
-				>
-					<GridBeam>
+			<GridBeam>
+				<div className='flex flex-col lg:flex-row  justify-center items-center text-center w-full  h-full '>
+					<motion.section
+						variants={{
+							hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
+							visible: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } }
+						}}
+						initial='hidden'
+						whileInView='visible'
+						exit='hidden'
+						viewport={{ once: true }}
+						className='relative space-y-16 w-full lg:w-1/2 px-6'
+					>
 						<AnimatePresence>
 							<article className=''>
 								<AnimatedText
 									as='p'
-									className='text-xl  font-light tracking-widest uppercase text-dark-400 dark:text-dark-200'
+									className='text-xl text-left font-light tracking-widest uppercase text-dark-400 dark:text-dark-200'
 									text='Larry Ly'
 								/>
 								<AnimatedLetters
@@ -60,27 +60,27 @@ export const Hero = () => {
 									}}
 								/>
 							</article>
-							<Profile />
-							<TechList />
 						</AnimatePresence>
-					</GridBeam>
-				</motion.section>
-				<motion.section
-					variants={{
-						hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
-						visible: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } }
-					}}
-					initial='hidden'
-					whileInView='visible'
-					exit='hidden'
-					viewport={{ once: true }}
-					className='relative container flex flex-col w-full mx-auto'
-				>
-					<div className='h-[15rem] w-full rounded-2xl md:rounded-2xl md:p-4 hidden lg:block'>
-						<MenuPopup />
-					</div>
-				</motion.section>
-			</div>
+						<Profile />
+						<TechList />
+					</motion.section>
+					<motion.section
+						variants={{
+							hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
+							visible: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } }
+						}}
+						initial='hidden'
+						whileInView='visible'
+						exit='hidden'
+						viewport={{ once: true }}
+						className='relative container flex flex-col w-full mx-auto lg:w-1/2'
+					>
+						<div className='h-[15rem] w-full rounded-2xl md:rounded-2xl md:p-4 hidden lg:block'>
+							<MenuPopup />
+						</div>
+					</motion.section>
+				</div>
+			</GridBeam>
 		</header>
 	)
 }

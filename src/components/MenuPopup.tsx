@@ -23,37 +23,37 @@ function Navbar({ className }: { className?: string }) {
 			<Menu setActive={setActive}>
 				<MenuItem setActive={setActive} active={active} item='Nerds Fighting'>
 					{/* <div className='text-sm gap-10 p-4 border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-2 bg-[#f7f7f7] transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none w-[20rem] text-secondaryBlack'> */}
-					<TextureButton variant='minimal' className=''>
+					<div className='text-sm gap-10 p-4 border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-neutral-500/60 border-4 bg-neutral-500/90 transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none w-[20rem] text-secondaryBlack'>
 						<ProductItem
 							title='Nerds Fighting'
 							href='/#applications'
 							src='/nerds-collage1.webp'
 							description='Kickboxing & Martial Arts Club'
 						/>
-					</TextureButton>
+					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} active={active} item='Hippo Docs'>
-					<TextureButton variant='icon'>
+					<div className='text-sm gap-10 p-4 border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-neutral-500/90 border-4 bg-neutral-500/90 transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none w-[20rem] text-secondaryBlack'>
 						<ProductItem
 							title='Hippo Docs'
 							href='/#applications'
 							src='/hippo-collage.webp'
 							description='Legal Document Prepping Business.'
 						/>
-					</TextureButton>
+					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} active={active} item='Louvair'>
-					<TextureButton variant='minimal'>
+					<div className='text-sm gap-10 p-4 border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-neutral-500/60 border-4 bg-neutral-500/90 transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none w-[20rem] text-secondaryBlack'>
 						<ProductItem
 							title='Louvair'
 							href='/#applications'
 							src='/louvair-collage.webp'
 							description='E-commerce store for a fragrance business.'
 						/>
-					</TextureButton>
+					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} active={active} item='Swim Coach'>
-					<TextureButton variant='minimal'>
+					<div className='text-sm gap-10 p-4 border-border dark:border-darkBorder shadow-light dark:shadow-dark rounded-base border-neutral-500/60 border-4 bg-neutral-500/90 transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none w-[20rem] text-secondaryBlack'>
 						<ProductItem
 							title='Swim Coach App'
 							// href='https://louvair.com'
@@ -61,7 +61,7 @@ function Navbar({ className }: { className?: string }) {
 							src='/adam-collage.webp'
 							description='Application for swim coaches to manage their teams.'
 						/>
-					</TextureButton>
+					</div>
 				</MenuItem>
 			</Menu>
 		</div>

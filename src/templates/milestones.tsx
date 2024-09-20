@@ -14,18 +14,10 @@ export const Milestones = () => {
 					<BlurFade delay={BLUR_FADE_DELAY * 13}>
 						<div className='flex flex-col items-center justify-center space-y-4 text-center'>
 							<div className='space-y-6'>
-								<div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 mx-3 text-xs'>
-									Hackathons
-								</div>
-								<div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-xs'>
-									Achievements
-								</div>{' '}
-								<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-									I like building and watching things grow.
-								</h2>
+								<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Builder</h2>
 								<p className='text-muted-foreground text-sm px-6'>
-									I&apos;ve been lucky to be part of some incredible projects, that have challenged
-									me and helped me grow. Witnessing what can be accomplished by a team of driven and
+									I&apos;ve been part of some incredible projects, that have challenged me and
+									helped me grow. Witnessing what can be accomplished by a team of driven and
 									passionate individuals was one of the most eye-opening experiences of my life.
 								</p>
 							</div>

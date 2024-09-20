@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image'
-import ThumbnailNerds from './public/nerds-collage1.webp'
+import ThumbnailNerds from '/public/nerds-collage1.webp'
 
 export type Project = {
 	id: number

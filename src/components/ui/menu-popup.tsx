@@ -7,7 +7,7 @@ import { TextureButton } from './texture-button'
 
 const transition = {
 	type: 'spring',
-	mass: 0.5,
+	mass: 0.9,
 	damping: 11.5,
 	stiffness: 100,
 	restDelta: 0.001,
@@ -35,8 +35,8 @@ export const MenuItem = ({
 			</motion.p>
 			{active !== null && (
 				<motion.div
-					initial={{ opacity: 0, scale: 0.85, x: 0, y: 0 }}
-					animate={{ opacity: 1, scale: 1, x: 0, y: 15 }}
+					initial={{ opacity: 0, scale: 0.5, x: 0, y: 0 }}
+					animate={{ opacity: 1, scale: 1.1, x: 0, y: 12 }}
 					transition={transition}
 				>
 					{active === item && (
