@@ -1,6 +1,7 @@
-const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette')
-const svgToDataUri = require('mini-svg-data-uri')
 const colors = require('tailwindcss/colors')
+//@ts-ignore
+import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette'
+import svgToDataUri from 'mini-svg-data-uri'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

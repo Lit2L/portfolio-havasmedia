@@ -7,7 +7,7 @@ import { TextureButton } from './ui/texture-button'
 
 export function MenuPopup() {
 	return (
-		<div className='relative w-full flex flex-col items-center justify-center h-[20rem] dark:bg-grid-neutral-100/5 bg-grid-neutral-500/20'>
+		<div className='relative w-full flex flex-col items-center justify-center h-[30rem] dark:bg-grid-neutral-100/5 bg-grid-neutral-600/10'>
 			<Navbar className='' />
 			<div className='absolute -z-50 top-1/3 opacity-40 '>
 				<Logo />

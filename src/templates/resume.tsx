@@ -10,7 +10,7 @@ export function Resume() {
 	return (
 		<SectionShell id='resume'>
 			<SectionHeader heading='resume' />
-			<div className='flex flex-col h-full mt-6'>
+			<div className='flex flex-col h-full my-24'>
 				<ContainerScroll
 					titleComponent={
 						<p className='text-lg font-semibold  text-black dark:text-white'>

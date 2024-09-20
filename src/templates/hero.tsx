@@ -10,6 +10,7 @@ import { TechList } from '@/components/TechList'
 import { Profile } from '@/components/Profile'
 import { MenuPopup } from '@/components/MenuPopup'
 import { GridBeam } from '@/components/ui/grid-beam'
+import { SectionShell } from '@/components/ui/section-shell'
 
 export const Hero = () => {
 	const { theme } = useTheme()
@@ -18,12 +19,12 @@ export const Hero = () => {
 	if (!mounted) return null
 
 	return (
-		<header
+		<SectionShell
 			id='intro'
-			className='pb-6 shadow-[inset_0_-40px_15px_-10px_#ededed] h-[40rem] transition duration-300 ease-in-out dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto w-full mx-auto '
+			className='shadow-[inset_0_-40px_15px_-10px_#ededed] transition duration-300 ease-in-out dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto w-full mx-auto '
 		>
 			<GridBeam>
-				<div className='flex flex-col lg:flex-row  justify-center items-center text-center w-full  h-full '>
+				<div className='flex flex-col lg:flex-row  justify-center items-center text-center w-full mb-36 h-full '>
 					<motion.section
 						variants={{
 							hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
@@ -45,7 +46,7 @@ export const Hero = () => {
 								<AnimatedLetters
 									as='p'
 									text='Data Analyst and Developer'
-									className='text-3xl font-black md:text-4xl lg:text-5xl'
+									className='text-3xl font-black text-left md:text-4xl lg:text-5xl'
 									textVariants={{
 										hidden: { transition: { staggerChildren: 0.05 } },
 										visible: { transition: { staggerChildren: 0.05 } }
@@ -75,12 +76,12 @@ export const Hero = () => {
 						viewport={{ once: true }}
 						className='relative container flex flex-col w-full mx-auto lg:w-1/2'
 					>
-						<div className='h-[15rem] w-full rounded-2xl md:rounded-2xl md:p-4 hidden lg:block'>
+						<div className='h-[30rem] w-full rounded-2xl md:rounded-2xl md:p-4 hidden lg:block'>
 							<MenuPopup />
 						</div>
 					</motion.section>
 				</div>
 			</GridBeam>
-		</header>
+		</SectionShell>
 	)
 }

@@ -69,13 +69,13 @@ export const SectionHeader = forwardRef<HTMLElement, SectionHeaderProps>(
 		>
 			<motion.h2
 				variants={headerVariants}
-				className='pr-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-yellow-500'
+				className='pr-6 text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-cyan-500/80'
 			>
 				{heading}
 			</motion.h2>
 			<motion.div
 				variants={lineVariants}
-				className='h-[5px] flex-1 bg-slate-500 transition-colors duration-200 ease-in-out dark:bg-yellow-500'
+				className='h-[4px] flex-1 bg-slate-500 transition-colors duration-200 ease-in-out dark:bg-cyan-500/50'
 			/>
 		</motion.header>
 	)

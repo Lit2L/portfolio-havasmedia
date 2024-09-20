@@ -33,12 +33,12 @@ export const Profile = () => {
 				exit='hidden'
 				viewport={{ once: true }}
 				className={cn(
-					'w-44 h-44 relative aspect-w-4 aspect-h-3 overflow-hidden bg-muted rounded-full shadow-xl shadow-black/50 border-4',
+					'w-56 h-56 relative aspect-w-4 aspect-h-3 overflow-hidden bg-muted rounded-full shadow-xl shadow-black/50 border-8 border-dark-300',
 					{
 						'bg-dark-100': theme === 'light',
 						'bg-dark-700': theme === 'dark',
 						'border-4': theme === 'light',
-						'border-8': theme === 'dark'
+						'bg-neutral-800': theme === 'dark'
 					}
 				)}
 			>

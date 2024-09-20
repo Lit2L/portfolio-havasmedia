@@ -65,6 +65,9 @@ dependencies:
   tailwindcss-animate:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.4.12)
+  timescape:
+    specifier: ^0.5.1
+    version: 0.5.1(react-dom@18.3.1)(react@18.3.1)
   use-scrollspy:
     specifier: ^1.2.0
     version: 1.2.0(react@18.3.1)
@@ -3402,6 +3405,36 @@ packages:
   /throttle-debounce@3.0.1:
     resolution: {integrity: sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==}
     engines: {node: '>=10'}
+    dev: false
+
+  /timescape@0.5.1(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-6li6gS8jzEnFKT55BF3XeC+LKmIfLlDtyN3QTCDq7VEnEQKhejRjaqKwTVWBxmDPOJMCmdnvc/Wfx7Qb14v23g==}
+    peerDependencies:
+      '@preact/signals': 1.x
+      preact: 10.x
+      react: '>=17'
+      react-dom: '>=17'
+      solid-js: '>=1'
+      svelte: 3.x
+      vue: 3.x
+    peerDependenciesMeta:
+      '@preact/signals':
+        optional: true
+      preact:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      solid-js:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /to-regex-range@5.0.1:

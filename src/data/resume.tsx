@@ -121,6 +121,15 @@ export const DATA = {
 		{
 			school: 'DataCamp',
 			href: 'https://www.datacamp.com/statement-of-accomplishment/track/673fdda744b5be9498b90b52e936153038451a3e?raw=1',
+			degree: 'Associate Data Engineer SQL',
+			logoUrl: '/dc.png',
+			features: ['SQL', 'Python', 'Data Cleaning'],
+			start: 'August',
+			end: '2024'
+		},
+		{
+			school: 'DataCamp',
+			href: 'https://www.datacamp.com/statement-of-accomplishment/track/673fdda744b5be9498b90b52e936153038451a3e?raw=1',
 			degree: 'Associate Data Analyst SQL',
 			logoUrl: '/dc.png',
 			features: ['SQL', 'Python', 'Data Cleaning'],

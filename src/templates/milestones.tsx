@@ -13,7 +13,7 @@ export const Milestones = () => {
 				<div className='space-y-12 w-full '>
 					<BlurFade delay={BLUR_FADE_DELAY * 13}>
 						<div className='flex flex-col items-center justify-center space-y-4 text-center'>
-							<div className='space-y-6'>
+							<div className='space-y-6 my-12'>
 								<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Builder</h2>
 								<p className='text-muted-foreground text-sm px-6'>
 									I&apos;ve been part of some incredible projects, that have challenged me and
